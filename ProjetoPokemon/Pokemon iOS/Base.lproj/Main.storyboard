@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CharmanderView-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="CharmanderViewController" modalPresentationStyle="fullScreen" id="BV1-FR-VrT" userLabel="CharmanderView" customClass="CharmanderViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="UlView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U06-Al-H2P">
+                                <rect key="frame" x="93" y="725" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="tertiarySystemBackgroundColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolhe o teu Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwk-6d-PYK">
+                                <rect key="frame" x="82" y="44" width="251" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nP-Vh-ppr">
+                                <rect key="frame" x="327" y="776" width="67" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertomew:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ebM-gd-kR8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Charmander_Especs" translatesAutoresizingMaskIntoConstraints="NO" id="Dyj-Na-Lqe">
+                                <rect key="frame" x="0.0" y="81" width="414" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVV-85-mRB">
+                                <rect key="frame" x="127" y="791" width="161" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Escolher">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertoarena:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Vhw-ZJ-01m"/>
+                                    <action selector="mewtoarena:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="VuU-R7-XSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI9-Jn-qNX">
+                                <rect key="frame" x="20" y="762" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertopikachu:" destination="BV1-FR-VrT" eventType="touchUpInside" id="d5b-kd-FzM"/>
+                                    <action selector="mewtocharmander:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="Pzt-1o-8dU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PokemonCharmander" translatesAutoresizingMaskIntoConstraints="NO" id="mMy-Vy-A4P">
+                                <rect key="frame" x="-45" y="152" width="539" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bNo-s9-wk6"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40882246211632012" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <segue destination="Jk8-lM-TGG" kind="showDetail" identifier="charmandertomew" id="jSn-Bn-ht6"/>
+                        <segue destination="Icv-IW-kys" kind="showDetail" identifier="charmandertoarena" id="Vaj-vM-Ky9"/>
+                        <segue destination="ZAd-8O-1uc" kind="showDetail" identifier="charmandertopikachu" id="Kmf-ZH-NFn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="83.705357142857139"/>
+        </scene>
+        <!--MewView-->
+        <scene sceneID="JjM-V5-NLk">
+            <objects>
+                <viewController storyboardIdentifier="MewViewController" modalPresentationStyle="fullScreen" id="Jk8-lM-TGG" userLabel="MewView" customClass="MewViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2TA-XC-vFB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolhe o teu Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kns-ga-opp">
+                                <rect key="frame" x="82" y="44" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mew" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="146-e1-9Oz">
+                                <rect key="frame" x="93" y="739" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ses-gn-L8Z">
+                                <rect key="frame" x="334" y="762" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mewtobarbasaur:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="bQw-eC-1qv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Mew_Especs" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-zs-yOa">
+                                <rect key="frame" x="0.0" y="82" width="414" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-7z-xQ0">
+                                <rect key="frame" x="127" y="791" width="161" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Escolher">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertoarena:" destination="BV1-FR-VrT" eventType="touchUpInside" id="g8M-hR-V0G"/>
+                                    <action selector="mewtoarena:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="UBV-NS-QUV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PokemonMew" translatesAutoresizingMaskIntoConstraints="NO" id="jXP-08-1Uu">
+                                <rect key="frame" x="0.0" y="226" width="414" height="528"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPG-gD-NYy">
+                                <rect key="frame" x="20" y="762" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="mewtocharmander:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="j82-dR-uwH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5wp-hD-6Uz"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40882246210000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="showDetail" identifier="mewtocharmander" id="hq3-kZ-PdD"/>
+                        <segue destination="zRR-5P-f0g" kind="showDetail" identifier="mewtobarbasaur" id="nVQ-1q-Jks"/>
+                        <segue destination="Icv-IW-kys" kind="showDetail" identifier="mewtoarena" id="F2v-Te-Ogd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="un8-ma-kEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.97101449275374" y="83.705357142857139"/>
+        </scene>
+        <!--BarbasaurView-->
+        <scene sceneID="UlW-WN-WTa">
+            <objects>
+                <viewController storyboardIdentifier="BarbasaurViewController" modalPresentationStyle="fullScreen" id="zRR-5P-f0g" userLabel="BarbasaurView" customClass="BarbasaurViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xeF-5h-0db">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolhe o teu Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-IC-caR">
+                                <rect key="frame" x="82" y="44" width="251" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Barbasaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZN-E4-Xll">
+                                <rect key="frame" x="93" y="732" width="228" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7N-bk-nJr">
+                                <rect key="frame" x="327" y="781" width="67" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barbasaurtosquirtle:" destination="zRR-5P-f0g" eventType="touchUpInside" id="TCI-Nn-gjs"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Barbasaur_Especs" translatesAutoresizingMaskIntoConstraints="NO" id="Aaq-HO-Grg">
+                                <rect key="frame" x="0.0" y="82" width="414" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PokemonBarbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="lAc-fv-114">
+                                <rect key="frame" x="-25" y="233" width="464" height="491"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9G-aG-FP3">
+                                <rect key="frame" x="20" y="762" width="60" height="83"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barbasaurtomew:" destination="zRR-5P-f0g" eventType="touchUpInside" id="G6R-iU-QCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbL-XH-TvU">
+                                <rect key="frame" x="133" y="791" width="149" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Escolher">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barbasaurtoarena:" destination="zRR-5P-f0g" eventType="touchUpInside" id="ii0-Ht-n6P"/>
+                                    <action selector="charmandertoarena:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mLQ-7r-SzV"/>
+                                    <action selector="mewtoarena:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="VWs-uR-FZw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pQ9-fH-61T"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40882246210000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IG0-IC-caR" firstAttribute="top" secondItem="pQ9-fH-61T" secondAttribute="top" id="1tl-8n-3se"/>
+                            <constraint firstItem="IG0-IC-caR" firstAttribute="leading" secondItem="pQ9-fH-61T" secondAttribute="leading" constant="82" id="62z-IQ-LFb"/>
+                            <constraint firstItem="t9G-aG-FP3" firstAttribute="leading" secondItem="pQ9-fH-61T" secondAttribute="leading" constant="20" id="Edn-fd-9EY"/>
+                            <constraint firstItem="pQ9-fH-61T" firstAttribute="trailing" secondItem="IG0-IC-caR" secondAttribute="trailing" constant="81" id="KZM-EO-98P"/>
+                            <constraint firstItem="pQ9-fH-61T" firstAttribute="bottom" secondItem="t9G-aG-FP3" secondAttribute="bottom" constant="17" id="tAO-DH-m4L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Jk8-lM-TGG" kind="showDetail" identifier="barbasaurtomew" id="lmm-oY-FE5"/>
+                        <segue destination="9Vc-ve-sh9" kind="showDetail" identifier="barbasaurtosquirtle" id="EGI-UX-uu9"/>
+                        <segue destination="Icv-IW-kys" kind="showDetail" identifier="barbasaurtoarena" id="7Qw-Y1-FK9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4x-fQ-00P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.0000000000002" y="83.705357142857139"/>
+        </scene>
+        <!--SquirtleView-->
+        <scene sceneID="GkO-ht-7cc">
+            <objects>
+                <viewController storyboardIdentifier="SquirtleViewController" modalPresentationStyle="fullScreen" id="9Vc-ve-sh9" userLabel="SquirtleView" customClass="SquirtleViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YI1-76-gh6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolhe o teu Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkn-PT-zck">
+                                <rect key="frame" x="82" y="44" width="251" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Squirtle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8k-WC-BcL">
+                                <rect key="frame" x="88" y="948" width="228" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Quirtle_Especs" translatesAutoresizingMaskIntoConstraints="NO" id="RLy-ge-jJw">
+                                <rect key="frame" x="0.0" y="82" width="414" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTD-ok-l5b">
+                                <rect key="frame" x="127" y="791" width="161" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Escolher">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertoarena:" destination="BV1-FR-VrT" eventType="touchUpInside" id="uAj-LX-jCf"/>
+                                    <action selector="mewtoarena:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="MBz-oP-gip"/>
+                                    <action selector="squirtletoarena:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="btr-pe-RG3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PokemonSquirtle" translatesAutoresizingMaskIntoConstraints="NO" id="5U7-qS-R95">
+                                <rect key="frame" x="-27" y="219" width="459" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI0-yN-JNG">
+                                <rect key="frame" x="20" y="761" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="squirtletobarbasaur:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="LX8-fi-mYh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Squirtle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfJ-Qd-DgN">
+                                <rect key="frame" x="93" y="742" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0c-pa-Q7l">
+                                <rect key="frame" x="327" y="780" width="67" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barbasaurtosquirtle:" destination="zRR-5P-f0g" eventType="touchUpInside" id="UIP-KS-BNZ"/>
+                                    <action selector="squirtletopikachu:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="hdA-cF-sLl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rlR-mT-Q9T"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40882246210000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="vkn-PT-zck" firstAttribute="leading" secondItem="rlR-mT-Q9T" secondAttribute="leading" constant="82" id="Ba9-d9-tmQ"/>
+                            <constraint firstItem="vkn-PT-zck" firstAttribute="top" secondItem="rlR-mT-Q9T" secondAttribute="top" id="Crb-dg-qpL"/>
+                            <constraint firstItem="rlR-mT-Q9T" firstAttribute="trailing" secondItem="vkn-PT-zck" secondAttribute="trailing" constant="81" id="ZM1-mK-jWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="zRR-5P-f0g" kind="showDetail" identifier="squirtletobarbasaur" id="1Av-fj-tmn"/>
+                        <segue destination="Icv-IW-kys" kind="showDetail" identifier="squirtletoarena" id="DRv-tx-ViR"/>
+                        <segue destination="ZAd-8O-1uc" kind="showDetail" identifier="squirtletopikachu" id="wNT-XV-oaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zc-nm-3X1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292.753623188406" y="83.705357142857139"/>
+        </scene>
+        <!--PikachuView-->
+        <scene sceneID="j62-4x-VBI">
+            <objects>
+                <viewController storyboardIdentifier="PikachuViewController" modalPresentationStyle="fullScreen" id="ZAd-8O-1uc" userLabel="PikachuView" customClass="PikachuViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3dK-Pf-ED5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilk-gl-Hh8">
+                                <rect key="frame" x="20" y="762" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pikatutosquirtle:" destination="ZAd-8O-1uc" eventType="touchUpInside" id="4Ob-e2-Msx"/>
+                                    <action selector="squirtletobarbasaur:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="FuS-IM-0D1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3h-gz-0LR">
+                                <rect key="frame" x="127" y="791" width="161" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Escolher">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="charmandertoarena:" destination="BV1-FR-VrT" eventType="touchUpInside" id="0Ja-Bn-Nzk"/>
+                                    <action selector="mewtoarena:" destination="Jk8-lM-TGG" eventType="touchUpInside" id="NdR-4Y-ybP"/>
+                                    <action selector="pikachutoarena:" destination="ZAd-8O-1uc" eventType="touchUpInside" id="qok-b3-yhA"/>
+                                    <action selector="squirtletoarena:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="cIs-a0-Qe2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cko-Qu-xHK">
+                                <rect key="frame" x="327" y="781" width="67" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="60"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="barbasaurtosquirtle:" destination="zRR-5P-f0g" eventType="touchUpInside" id="fp5-aq-Vlu"/>
+                                    <action selector="pikachutocharmander:" destination="ZAd-8O-1uc" eventType="touchUpInside" id="bus-XD-TcB"/>
+                                    <action selector="squirtletopikachu:" destination="9Vc-ve-sh9" eventType="touchUpInside" id="Mt4-9L-X4i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escolhe o teu Pokemon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5z-dC-KSC">
+                                <rect key="frame" x="82" y="44" width="251" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8DB-sW-Tyd">
+                                <rect key="frame" x="93" y="744" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="Pikachu_Especs" translatesAutoresizingMaskIntoConstraints="NO" id="FRF-tq-4tL">
+                                <rect key="frame" x="0.0" y="82" width="414" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PokemonPikachu" translatesAutoresizingMaskIntoConstraints="NO" id="W9h-Mh-A79">
+                                <rect key="frame" x="-172" y="232" width="847" height="489"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1dy-Vl-BQh"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.40882246210000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <segue destination="9Vc-ve-sh9" kind="showDetail" identifier="pikatutosquirtle" id="5fQ-GM-deF"/>
+                        <segue destination="Icv-IW-kys" kind="showDetail" identifier="pikachutoarena" id="6hK-1D-bk9"/>
+                        <segue destination="BV1-FR-VrT" kind="showDetail" identifier="pikachutocharmander" id="Wzf-Ye-NWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBP-pO-gxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3056.521739130435" y="83.705357142857139"/>
+        </scene>
+        <!--Arena-->
+        <scene sceneID="5jg-dX-0bS">
+            <objects>
+                <viewController storyboardIdentifier="ArenaViewController" modalPresentationStyle="fullScreen" id="Icv-IW-kys" userLabel="Arena" customClass="ArenaViewController" customModule="Pokemon3_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l8L-Kj-TiP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stadium" translatesAutoresizingMaskIntoConstraints="NO" id="936-y7-Yfr">
+                                <rect key="frame" x="-141" y="0.0" width="697" height="923"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDP-MF-f3T">
+                                <rect key="frame" x="0.0" y="44" width="94" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="&lt; back">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="arenatocharmander:" destination="Icv-IW-kys" eventType="touchUpInside" id="6dR-yc-WiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8kw-99-nl3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="showDetail" identifier="arenatocharmander" id="zVn-H6-tDd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hi6-Ar-8jj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099" y="980"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vaj-vM-Ky9"/>
+        <segue reference="Kmf-ZH-NFn"/>
+        <segue reference="5fQ-GM-deF"/>
+        <segue reference="nVQ-1q-Jks"/>
+        <segue reference="jSn-Bn-ht6"/>
+        <segue reference="zVn-H6-tDd"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Barbasaur_Especs" width="832" height="486"/>
+        <image name="Charmander_Especs" width="846" height="478"/>
+        <image name="Mew_Especs" width="846" height="462"/>
+        <image name="Pikachu_Especs" width="832" height="468"/>
+        <image name="PokemonBarbasaur" width="508" height="491"/>
+        <image name="PokemonCharmander" width="500" height="500"/>
+        <image name="PokemonMew" width="494" height="505"/>
+        <image name="PokemonPikachu" width="1191" height="1254"/>
+        <image name="PokemonSquirtle" width="500" height="500"/>
+        <image name="Quirtle_Especs" width="830" height="486"/>
+        <image name="stadium" width="1200" height="675"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
